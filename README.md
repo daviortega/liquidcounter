@@ -33,3 +33,15 @@ vote_counts = {
     'abstain': 1,
     'liquid': 4
 }
+```
+
+## Behavior
+
+Cyclic voting resolves in abstain of all involved. For example:
+
+`a -> b -> c -> a`  
+resolves in 3 abstentions.
+
+`a -> b -> c -> f`  
+`d -> e -> f -> c`  
+resolves in 6 abstentions.
