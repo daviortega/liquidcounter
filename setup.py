@@ -1,7 +1,7 @@
 from setuptools import setup
 
 setup(name='liquidcounter',
-      version='0.1',
+      version='1.0',
       description='Counter of votes for liquid democracy',
       url='http://github.com/daviortega/liquidcounter',
       author='Davi Ortega',
