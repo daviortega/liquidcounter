@@ -13,8 +13,8 @@ vote_counts = lc.resolveIt(input_vote)
 ```
 
 Input:
-```
-input vote = _
+```javascript
+input_vote = {
     'yes': ['a', 'b', 'c'],
     'no': ['d'],
     'abstain': ['e'],
@@ -26,7 +26,7 @@ input vote = _
 ```
 
 resolves in:
-```json
+```JSON
 vote_counts = {
     'yes': 4,
     'no': 3,
