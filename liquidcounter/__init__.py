@@ -33,7 +33,6 @@ def _resolveLiquids(liquid={}):
     abstain = len(_flattenList(old_liquid.values())) - len(_flattenList(liquid.values()))
     if abstain != 0:
         liquid['abstain'] = abstain
-    print(liquid)
     return liquid
 
 
@@ -71,8 +70,6 @@ def resolveIt(votes={}):
             del liquid['abstain']
 
         for vote in STANDARD_VOTES:
-            print(vote)
-            print(results)
             if vote in votes:
                 for voter in votes[vote]:
                     if voter not in voters:
@@ -84,12 +81,10 @@ def resolveIt(votes={}):
                     else:
                         results[vote] += 1
                 del votes[vote]
-            print(results)
 
         for unresolved in liquid:
             results['liquid'] += len(liquid[unresolved])
 
         if len(votes) != 0:
             raise RuntimeError('There are votes that have not being counted for some reason. Check implementation')
-        print(voters)
     return results
