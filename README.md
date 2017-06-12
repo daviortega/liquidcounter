@@ -26,7 +26,7 @@ input_vote = {
 ```
 
 resolves in:
-```JSON
+```javascript
 vote_counts = {
     'yes': 4,
     'no': 3,
