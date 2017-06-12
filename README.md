@@ -35,6 +35,15 @@ vote_counts = {
 }
 ```
 
+## Conventions
+
+|vote| explanation |
+|:-:|:-:|
+|yes| vote for |
+|no| vote against |
+|abstain| abstation, null and blank votes |
+|liquid| votes delagated yet to be resolved in yes, no or abstain |
+
 ## Behavior
 
 Cyclic voting resolves in abstain of all involved. For example:
